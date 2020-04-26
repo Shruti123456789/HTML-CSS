@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>test</title>
+	<style>
+		body
+		{
+			margin-top: 350px;
+			margin-left:700px;
+		}
+.toggleswitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+input
+{
+	display:none;
+}
+.roundswitch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.roundswitch:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .roundswitch {
+  background-color: green;
+}
+
+input:checked + .roundswitch:before {
+  left:26px;
+}
+.roundswitch {
+  border-radius: 34px;
+}
+
+.roundswitch:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+<label class="toggleswitch">
+  <input type="checkbox">
+  <span class="roundswitch"></span>
+</label>
+</body>
+</html>
